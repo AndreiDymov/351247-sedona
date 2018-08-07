@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Дымов](https://up.htmlacademy.ru/htmlcss/22/user/351247).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Альтигин](https://htmlacademy.ru/profile/artem).
 
 ---
 
