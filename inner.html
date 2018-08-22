@@ -7,69 +7,130 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  				<a  href="info.html">Информация</a>
-  				<a  href="media.html">Фото и видео</a>
-  				<a class="label" href="#">
-  					<img src="http://placehold.it/150x100" alt="седона">
+  				<a  href="info.html" aria-label="Информация о седоне">Информация</a>
+  				<a  href="media.html" aria-label="Фото и видео седоны">Фото и видео</a>
+  				<a class="label" href="index.html" aria-label="ссылка на главную страницу">
+  					<img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
   				</a>
-  				<a  href="mapstate.html">Карта штата</a>
-  				<a  href="hotels.html">Гостиницы</a>
+  				<a  href="mapstate.html" aria-label="Карта штата">Карта штата</a>
+  				<a  href="hotels.html" aria-label="Гостиницы седоны">Гостиницы</a>
   		</nav>
   	</header>
   	<main>
       <h1 class="visually-hidden">Страница поиска</h1>
       <section class="search-filter">
-          <!-- form-->
-      </section>
-      <section class="search">
-        <ul class="sorting">
-          <li class="result-amount">найдено:<span></span></li>
-          <li class="item">сортировка</li>
-          <li class="item-current"><a class="sorting-price">по цене</a></li>
-          <li class="item"><a class="sorting-type">по типу</a></li>
-          <li class="item"><a class="sorting-rating">по рейтингу</a></li>
-        </ul>
-        <span class="hierarchy"></span>
-        <ul>
-          <li class="result-cards">
-            <img src="img/amara.jpg" alt="amara_resort">
-            <a class="hotel-name" href="amara_resort_&_spa.html">amara resort & spa</a>
-            <span class="product-type">гостиница</span>
-            <span class="product-price">от<span>4000</span>р.</span>
-            <a class="info-more" href="#">подробнее</a>
-            <a class="buy" href="#">забронировать</a>
-            <span class="rating">рейтинг:<span></span></span>
-          </li>
-          <li class="result-cards">
-            <img src="img/desert.jpg" alt="desert_qual_inn">
-            <a class="hotel-name" href="desert_qual_inn.html">desert qual inn</a>
-            <p class="product-type">гостиница</p>
-            <p class="product-price">от<span>3000</span>р.</p>
-            <a class="info-more">подробнее</a>
-            <a class="buy">забронировать</a>
-            <span class="rating">рейтинг:<span></span></span>
-          </li>
-          <li class="result-cards">
-            <img src="img/villas.jpg" alt="villas_at_poco_diablo">
-            <a class="hotel-name" href="villas_at_poco_diablo.html">villas at poco diablo</a>
-            <p class="product-type">гостиница</p>
-            <p class="product-price">от<span>2000</span>р.</p>
-            <a class="info-more">подробнее</a>
-            <a class="buy">забронировать</a>
-            <span class="rating">рейтинг:<span></span></span>
-          </li>
-        </ul>
-      </section>    
+          <form action="https://htmlacademy.ru" method="post" oninput="maxprice.value=rangeprice.value">
+          	<fieldset>
+          		<legend>Инфраструктура:</legend>
+          		<label>
+          			<input type="checkbox" name="pool">
+          			Бассейн
+          		</label>
+          		<label>
+          			<input type="checkbox" name="parking">
+          			Парковка
+          		</label>
+          		<label>
+          			<input type="checkbox" name="wi-fi">
+          			wi-fi
+          		</label>
+          	</fieldset>
+          	<fieldset>
+          		<legend>Тип жилья:</legend>
+          		<label>
+          			<input type="checkbox" name="hotel">
+          			Гостиница
+          		</label>
+          		<label>
+          			<input type="checkbox" name="motel">
+          			Мотель
+          		</label>
+          		<label>
+          			<input type="checkbox" name="apartment">
+          			Апартаменты
+          		</label>
+          	</fieldset>
+          	<fieldset>
+          		<legend>Стоимость в сутки (р):</legend>
+          		<label>
+          			От
+          			<output name="minprice">0</output>
+          		</label>
+          		<label>
+          			До
+          			<output name="maxprice">3200</output>
+          		</label>
+          		<label>
+          			<span class="visually-hidden">Шкала выбора диапазона цен</span>
+          			<input type="range" name="rangeprice" min="0" max="3500" step="100">
+          		</label>
+          		<a href="">Показать</a>
+          	</fieldset>
+          </form>
+        </section>
+        <section class="search">
+        	<span class="result-amount">найдено:<span></span></span>
+          	<span class="item">сортировка</span>
+          	<ul class="sorting">
+          		<li class="item-current">
+          			<a class="sorting-price">по цене</a>
+          		</li>
+          		<li class="item">
+          			<a class="sorting-type">по типу</a>
+          		</li>
+          		<li class="item">
+          			<a class="sorting-rating">по рейтингу</a>
+          		</li>
+        		<li class="hierarchy">
+        			<a class="hierarchy-up"></a>
+        			<a class="hierarchy-down"></a>
+        		</li>
+        	</ul>
+        	<ul>
+          		<li class="result-cards">
+            		<img src="img/amara.jpg" alt="amara_resort" width="135" height="90">
+            		<a class="hotel-name" href="amara_resort_&_spa.html">amara resort & spa</a>
+            		<span class="product-type">гостиница</span>
+            		<span class="product-price">от<span>4000</span>р.</span>
+            		<a class="info-more" href="#">подробнее</a>
+            		<a class="buy" href="#">забронировать</a>
+            		<span class="rating">рейтинг:<span></span></span>
+          		</li>
+          		<li class="result-cards">
+            		<img src="img/desert.jpg" alt="desert_qual_inn" width="135" height="90">
+            		<a class="hotel-name" href="desert_qual_inn.html">desert qual inn</a>
+            		<span class="product-type">гостиница</span>
+            		<span class="product-price">от<span>3000</span>р.</span>
+            		<a class="info-more" href="#">подробнее</a>
+            		<a class="buy" href="#">забронировать</a>
+            		<span class="rating">рейтинг:<span></span></span>
+          		</li>
+          		<li class="result-cards">
+           			<img src="img/villas.jpg" alt="villas_at_poco_diablo" width="135" height="90">
+            		<a class="hotel-name" href="villas_at_poco_diablo.html">villas at poco diablo</a>
+            		<span class="product-type">гостиница</span>
+            		<span class="product-price">от<span>2000</span>р.</span>
+            		<a class="info-more" href="#">подробнее</a>
+            		<a class="buy" href="#">забронировать</a>
+            		<span class="rating">рейтинг:<span></span></span>
+          		</li>
+        	</ul>
+      	</section>    
   	</main>
   	<footer class="main-footer">
-  		<span class="hashtag">#VISITSEDONA</span>
-  			<ul class="footer-social">
-  				<li class="social-button-twitter">twitter</li>
-  				<li class="social-button-facebook">facebook</li>
-  				<li class="social-button-youtube">youtube</li>
-  			</ul>
-  		<span class="copyright">website by</span>
-  		<img src="#" alt="htmlacademy">
-  	</footer>
+  		<a class="hashtag" href="#">#VISITSEDONA</a>
+  		<section class="footer-social">
+  			<a class="social-button-twitter" href="#" aria-label="Найти нас в твиттер">twitter</a>
+  			<a class="social-button-facebook" href="#" aria-label="Найти нас в фейсбук">facebook</a>
+  			<a class="social-button-youtube" href="#" aria-label="Посмотреть наш канал на ютьюб">youtube</a>
+  		</section>
+  		<section class="madefrom">
+  			<span class="copyright">website by</span>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss">
+  				<img src="#" alt="htmlacademy">
+  				<span class="visually-hidden">HTML Academy</span>
+  			</a>	
+  		</section>
+   	</footer>
   </body>
 </html>
