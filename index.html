@@ -7,19 +7,17 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  				<a  href="info.html">Информация</a>
-  				<a  href="media.html">Фото и видео</a>
-  				<a class="label" href="#">
-  					<img src="http://placehold.it/150x100" alt="седона">
-  				</a>
-  				<a  href="mapstate.html">Карта штата</a>
-  				<a  href="hotels.html">Гостиницы</a>
+  				<a  href="info.html" aria-label="Информация о седоне">Информация</a>
+  				<a  href="media.html" aria-label="Фото и видео седоны">Фото и видео</a>
+  				<img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
+  				<a  href="mapstate.html" aria-label="Карта штата">Карта штата</a>
+  				<a  href="hotels.html" aria-label="Гостиницы седоны">Гостиницы</a>
   		</nav>
   	</header>
   	<main>
   		<h1 class="visually-hidden">Sedona</h1>
   		<section class="signboard">
-  			<img src="http://placehold.it/150x100" alt="вид с терассы">
+  			<img src="http://placehold.it/150x100" alt="welcome to sedona" >
   		</section>
   		<section class="features">
   			<h2 class="caption">седона - небольшой городок в аризоне,<br>
@@ -32,7 +30,7 @@
   			<span class="content">
   				седона - не аттракцион для туристов, там течет своя жизнь
   			</span>
-  			<img class="city" src="img/city1200.jpg" alt="city">
+  			<img class="city" src="img/city1200.jpg" alt="city" width="800" height="401">
   		</section>
   		<section class="item-mini">	
  			<span class="caption"><b>жилье</b></span>
@@ -58,7 +56,7 @@
 			<span class="content">
 				да, по нему можно 	пройти! если конечно вы осмелитесь
 			</span>
-			<img class="bridge" src="img/bridge1200.jpg" alt="devil_bridge">
+			<img class="bridge" src="img/bridge1200.jpg" alt="devil_bridge" width="800" height="400">
 		</section>
 		<section class="item-mini">	
 			<h3 class="caption">небольшая площадь</h3>
@@ -86,19 +84,46 @@
   			<span class="content">
   				укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
   			</span>
-  			<img src="http://placehold.it/150x100" alt="map">
-  			<!-- form -->  			
+  			<section class="modal-form">	
+ 				<button class="call-form">
+ 					<span>Поиск гостиницы в седоне</span>
+ 				</button>	
+  				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+  					<label>
+  						Дата заезда:
+  						<input type="text" name="search-date" placeholder="24 апреля 2017">
+  					</label>
+  					<label>
+  						Дата выезда:
+  						<input type="text" name="search-date" placeholder="04 июля 2017">
+  					</label>
+  					<label>
+  						Взрослые:
+  						<input type="number" name="sum-adults" step="1" min="1" placeholder="2">
+  					</label>
+  					<label>
+  						Дети:
+  						<input type="number" name="sum-kids" step="1" min="0" placeholder="0">
+  					</label>
+  					<button class="search-button" type="submit">Найти</button>
+  				</form>  			
+  			</section>
   		</section>	
   	</main>
   	<footer class="main-footer">
-  		<span class="hashtag">#VISITSEDONA</span>
-  			<ul class="footer-social">
-  				<li class="social-button-twitter">twitter</li>
-  				<li class="social-button-facebook">facebook</li>
-  				<li class="social-button-youtube">youtube</li>
-  			</ul>
-  		<span class="copyright">website by</span>
-  		<img src="#" alt="htmlacademy">
-  	</footer>
+  		<a class="hashtag" href="#">#VISITSEDONA</a>
+  		<section class="footer-social">
+  				<a class="social-button-twitter" href="#" aria-label="Найти нас в твиттер">twitter</a>
+  				<a class="social-button-facebook" href="#" aria-label="Найти нас в фейсбук">facebook</a>
+  				<a class="social-button-youtube" href="#" aria-label="Посмотреть наш канал на ютьюб">youtube</a>
+  		</section>
+  		<section class="madefrom">
+  			<span class="copyright">website by</span>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss">
+  				<img src="#" alt="htmlacademy">
+  				<span class="visually-hidden">HTML Academy</span>
+  			</a>	
+  		</section>
+   	</footer>
   </body>
 </html>
