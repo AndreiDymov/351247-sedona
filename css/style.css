@@ -1,0 +1,282 @@
+@font-face {
+	font-family: "PT Sans";
+	src: url("PTSans-Web-Regular.woff2") format("woff2"),
+		 url("PTSans-Web-Bold.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;	
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	color: #000000;
+}
+
+
+.main-navigation a:focus,
+.main-navigation a:hover {
+	color: #a3c7de;
+}
+
+.main-navigation a:active {
+	color: #b2b2b2;
+}
+
+.current-page {
+	color: #766357;
+}
+
+.city, .bridge {
+	color: #ffffff;
+	background-color: #81b3d2;
+
+}
+
+.features {
+	line-height: 26px;
+}
+
+
+.content,
+.features .item {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.booking-caption {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.item-mini {
+	background-color: #eeeeee;
+}
+
+.call-form a {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	background-color: #766357;
+	border: none;
+}
+
+.call-form a:hover,
+.call-form a:focus {
+	background-color: #604e43;
+}
+
+.call-form a:active {
+	background-color: #503e33;
+	color: #857871;
+}
+
+.search-button {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-color: #669ec0;
+}
+
+.search-button:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+.booking {
+	background-image: url("../img/map1200.jpg");
+}
+
+.signboard {
+	background-image: url("../img/signboard1200.jpg");
+	background-repeat: no-repeat;
+}
+
+.item-house, .item-food, .item-suvenirs {
+	background-repeat: no-repeat;
+	background-position: top center;
+
+}
+
+.item-house {
+	background-image: url("../img/icon-1.svg");
+}
+
+.item-suvenirs {
+	background-image: url("../img/icon-2.svg");
+}
+
+.item-food {
+	background-image: url("../img/icon-3.svg");
+}
+
+ .search-form input {
+	background-color: #f2f2f2;
+}
+.search-form input:focus {
+	background-color: #ffffff;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.copyright {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.search-form legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.search-filter {
+	background-image: url("../img/signboard1200.jpg");
+	background-repeat: no-repeat;
+}
+
+.filter-form label,
+.cost-house a,
+.product,
+.rating {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.cost-house a {
+	background-color: rgba(0, 0, 0, 0);
+	color: #ffffff; 
+
+}
+
+.cost-house a:hover,
+.cost-house a:focus {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.search .item,
+.search .item-current {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.sorting a {
+	color: #d1d1d1;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+	color: #81b3d2;
+}
+
+.sorting a:active {
+	color: #000000;
+
+}
+.item-current a {
+	color: #81b3d2;
+}
+
+.hierarchy a {
+	color: #cacaca;
+} 
+
+.hierarchy a:hover,
+.hierarchy a:focus {
+	color: #000000;
+}
+
+.hierarchy a:active,
+.hhierarchy .current {
+	color: #81b3d2;
+}
+
+
+.result-amount,
+.hotel-name {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.rating {
+
+	background-color: #f2f2f2;
+	color: #666666;
+	font-weight: 400;
+}
+
+.info-more,
+.buy {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.info-more {
+	background-color: #81b3d2;
+	color: #ffffff;
+
+}
+
+.buy {
+	background-color: #766357; 
+	color: #ffffff;
+}
+
+.info-more:focus,
+.info-more:hover {
+	background-color: #669ec0;
+}
+
+.buy:focus,
+.buy:hover {
+	background-color: #604e43;
+}
+
+.info-more:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+.buy:active {
+	background-color: #503e33;
+	color: #857871;
+}
+
+.hotel-name {
+	color: #000000;
+}
+
+.hotel-name:focus,
+.hotel-name:hover {
+	color: #81b3d2;
+}
+
+.hotel-name:active {
+	color: #b2b2b2;
+}
