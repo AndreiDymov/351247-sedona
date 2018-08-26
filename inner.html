@@ -1,144 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  				<a  href="info.html" aria-label="Информация о седоне">Информация</a>
-  				<a  href="media.html" aria-label="Фото и видео седоны">Фото и видео</a>
-  				<a class="label" href="index.html" aria-label="Главная страница">
-  					<img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
-  				</a>
-  				<a  href="mapstate.html" aria-label="Карта штата">Карта штата</a>
-  				<a  class="current-page" href="#" aria-label="Гостиницы седоны">Гостиницы</a>
-  		</nav>
-  	</header>
-  	<main>
-      	<h1 class="visually-hidden">Страница поиска</h1>
-      	<section class="search-filter">
-         	<form class="filter-form" action="https://htmlacademy.ru" method="post" oninput="maxprice.value=rangeprice.value">
-          		<fieldset class="infrastructure">
-          			<legend>Инфраструктура:</legend>
-          			<label>
-          				<input type="checkbox" name="pool">
-          				Бассейн
-          			</label>
-          			<label>
-          				<input type="checkbox" name="parking">
-          				Парковка
-          			</label>
-          			<label>
-          				<input type="checkbox" name="wi-fi">
-          				wi-fi
-          			</label>
-          		</fieldset>
-          		<fieldset class="type-house">
-          			<legend>Тип жилья:</legend>
-          			<label>
-          				<input type="checkbox" name="hotel">
-          				Гостиница
-          			</label>
-          			<label>
-          				<input type="checkbox" name="motel">
-          				Мотель
-          			</label>
-          			<label>
-          				<input type="checkbox" name="apartment">
-          				Апартаменты
-          			</label>
-          		</fieldset>
-          		<fieldset class="cost-house">
-          			<legend>Стоимость в сутки (р):</legend>
-          			<label>
-          				От
-          				<output name="minprice">0</output>
-          			</label>
-          			<label>
-          				До
-          				<output name="maxprice">3200</output>
-          			</label>
-          			<label>
-          				<span class="visually-hidden">Шкала выбора диапазона цен</span>
-          				<input type="range" name="rangeprice" min="0" max="3500" step="100">
-          			</label>
-          			<div class="filter-start">
-           				<a href="#">Показать</a>
-           			</div>	
-           		</fieldset>
-        	</form>
-        </section>
-        <section class="search">
-        	<span class="result-amount">найдено:<span></span></span>
-          	<span class="item">сортировка</span>
-          	<ul class="sorting">
-          		<li class="item-current">
-          			<a class="sorting-price">по цене</a>
-          		</li>
-          		<li class="item">
-          			<a class="sorting-type">по типу</a>
-          		</li>
-          		<li class="item">
-          			<a class="sorting-rating">по рейтингу</a>
-          		</li>
-        		<li class="hierarchy">
-        			<a class="current">&#8743;</a>
-        			<a class="no-current">&#8744;</a>
-        		</li>
-        	</ul>
-        	<ul>
-          		<li class="result-cards">
-            		<img src="img/amara.jpg" alt="amara_resort" width="135" height="90">
-            		<a class="hotel-name" href="amara_resort_&_spa.html">amara resort & spa</a>
-            		<span class="product">
-            			гостиница
-            			<span>от 4000 р.</span>
-            		</span>
-            		<a class="info-more" href="#">подробнее</a>
-            		<a class="buy" href="#">забронировать</a>
-            		<span class="rating">рейтинг:<span>8,5</span></span>
-          		</li>
-          		<li class="result-cards">
-            		<img src="img/desert.jpg" alt="desert_qual_inn" width="135" height="90">
-            		<a class="hotel-name" href="desert_qual_inn.html">desert qual inn</a>
-            		<span class="product">
-            			гостиница
-            			<span>от 3000 р.</span>
-            		</span>	
-            		<a class="info-more" href="#">подробнее</a>
-            		<a class="buy" href="#">забронировать</a>
-            		<span class="rating">рейтинг:<span>8,9</span></span>
-          		</li>
-          		<li class="result-cards">
-           			<img src="img/villas.jpg" alt="villas_at_poco_diablo" width="135" height="90">
-            		<a class="hotel-name" href="villas_at_poco_diablo.html">villas at poco diablo</a>
-            		<span class="product">
-            			гостиница
-            			<span>от 2000 р.</span>
-            		</span>	
-            		<a class="info-more" href="#">подробнее</a>
-            		<a class="buy" href="#">забронировать</a>
-            		<span class="rating">рейтинг:<span>9,5</span></span>
-          		</li>
-        	</ul>
-      	</section>    
-  	</main>
-  	<footer class="main-footer">
-  		<a class="hashtag" href="#">#VISITSEDONA</a>
-  		<section class="footer-social">
-  				<a class="button-twitter" href="#" aria-label="Найти нас в твиттер">twitter</a>
-  				<a class="button-facebook" href="#" aria-label="Найти нас в фейсбук">facebook</a>
-  				<a class="button-youtube" href="#" aria-label="Посмотреть наш канал на ютьюб">youtube</a>
-  		</section>
-  		<section class="copyright">
-  			<span>website by</span>
-  			<a class="madefrom" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>	
-  		</section>
-   	</footer>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-navigation">
+				<a  href="info.html" aria-label="Информация о седоне">Информация</a>
+				<a  href="media.html" aria-label="Фото и видео седоны">Фото и видео</a>
+				<a class="label" href="index.html" aria-label="Главная страница">
+				   <img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
+				</a>
+				<a  href="mapstate.html" aria-label="Карта штата">Карта штата</a>
+				<a  class="current-page" href="#" aria-label="Гостиницы седоны">Гостиницы</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1 class="visually-hidden">Страница поиска</h1>
+			<section class="search-filter">
+				<h2 class="visually-hidden">Форма поиска</h2>
+				<form class="filter-form" action="https://htmlacademy.ru" method="post" oninput="maxprice.value=rangeprice.value">
+					<div class="infrastructure">
+						<h3>Инфраструктура:</h3>
+						<input type="checkbox" name="pool" id="pool-id">
+						<label for="pool-id">Бассейн</label>
+						<input type="checkbox" name="parking" id="parking-id">
+						<label for="parking-id"> Парковка</label>
+						<input type="checkbox" name="wi-fi" id="wi-fi-id">
+						<label for="wi-fi-id">wi-fi</label>
+					</div>
+					<div class="type-house">
+					   <h3>Тип жилья:</h3>
+						<input type="checkbox" name="hotel" id="hotel-id">
+						<label for="hotel-id">Гостиница</label>
+						<input type="checkbox" name="motel" id="motel-id">
+						<label for="motel-id">Мотель</label>
+						<input type="checkbox" name="apartment" id="apartment-id">
+						<label for="apartment-id">Апартаменты</label>
+					</div>
+					<div class="cost-house">
+						<h3>Стоимость в сутки (р):</h3>
+						<label for="minprice-id">От</label>
+						<output name="minprice" id="minprice-id">0</output>
+						<label for="maxprice-id">До</label>
+						<output name="maxprice" id="maxprice-id">3200</output>
+						<label for="rangeprice-id"><span class="visually-hidden">Шкала выбора диапазона цен</span></label>
+						<input type="range" name="rangeprice" id="rangeprice-id" min="0" max="3500" step="100">
+						<a class="filter-start" href="#">Показать</a>	
+					</div>
+				</form>
+			</section>
+			<section class="result-search">
+				<h2 class="visually-hidden">Результат поиска</h2>
+				<span class="amount">найдено:3<span></span></span>
+				<span class="item">сортировка</span>
+				<ul class="sorting">
+					<li class="item item-current">
+					   <a>по цене</a>
+					</li>
+					<li class="item">
+					   <a>по типу</a>
+					</li>
+					<li class="item">
+					   <a>по рейтингу</a>
+					</li>
+					<li class="arrows">
+						<a class="arrow-up">&#8743;</a>
+						<a class="arrow-down active">&#8744;</a>
+					</li>
+				</ul>
+			</section>
+			<section class="catalog"> 
+				<h2 class="visually-hidden">Каталог поиска</h2>   
+				<div class="catalog-item">
+					<img src="img/amara.jpg" alt="amara_resort" width="135" height="90">
+					<div class="item-description">
+						<h2><a class="hotel-name" href="amara_resort_&_spa.html">amara resort & spa</a></h2>
+						<span class="description">гостиница</span>
+						<span class="description">от 4000 р.</span>
+					</div>
+					<div class="catalog-btn">
+						<a class="info-more" href="#">подробнее</a>
+						<a class="buy" href="#">забронировать</a>
+					</div>
+					<div class="item-rating">
+						<span>рейтинг: 8,5 </span>
+					</div>
+				</div>
+				<div  class="catalog-item">
+					<img src="img/desert.jpg" alt="desert_qual_inn" width="135" height="90">
+					<div class="item-description">
+						<h2><a class="hotel-name" href="desert_qual_inn.html">desert qual inn</a></h2>
+						<span class="description">гостиница</span>
+						<span class="description">от 3000 р.</span>
+					</div>
+					<div class="item-btn">	
+						<a class="info-more" href="#">подробнее</a>
+						<a class="buy" href="#">забронировать</a>
+					</div>
+					<div class="item-rating">
+						<span>рейтинг: 8,9 </span>
+					</div>
+		  		</div>
+				<div  class="catalog-item">
+					<img src="img/villas.jpg" alt="villas_at_poco_diablo" width="135" height="90">
+					<div class="item-description">
+						<h2><a class="hotel-name" href="villas_at_poco_diablo.html">villas at poco diablo</a></h2>
+						<span class="description">гостиница</span>
+						<span class="description">от 2000 р.</span>
+					</div>
+					<div class="item-btn">
+						<a class="info-more" href="#">подробнее</a>
+						<a class="buy" href="#">забронировать</a>
+					</div>
+					<div class="item-rating">
+						<span>рейтинг: 9,5 </span>
+					</div>
+				</div>
+			</section> 
+		</div>   
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<a class="hashtag" href="#">#VISITSEDONA</a>
+			<div class="footer-social">
+				<a class="button-twitter" href="#" aria-label="Найти нас в твиттер">twitter</a>
+				<a class="button-facebook" href="#" aria-label="Найти нас в фейсбук">facebook</a>
+				<a class="button-youtube" href="#" aria-label="Посмотреть наш канал на ютьюб">youtube</a>
+			</div>
+			<div class="copyright">
+				<span>website by</span>
+				<a class="madefrom" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>	
+			</div>
+		</div>
+	</footer>
   </body>
 </html>
