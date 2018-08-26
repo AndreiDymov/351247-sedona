@@ -20,6 +20,11 @@ body {
 	background-repeat: no-repeat;
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 a {
 	color: #000000;
 }
@@ -38,7 +43,7 @@ a {
 	color: #766357;
 }
 
-.city, .bridge {
+.features-picture {
 	color: #ffffff;
 	background-color: #81b3d2;
 
@@ -49,23 +54,23 @@ a {
 }
 
 
-.content,
+.description,
 .features .item {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
 }
 
-.booking-caption {
+.booking h2 {
 	font-size: 30px;
 	line-height: 36px;
 }
 
-.item-mini {
+.features-no-picture {
 	background-color: #eeeeee;
 }
 
-.call-form a {
+.booking button {
 	font-size: 21px;
 	line-height: 26px;
 	color: #ffffff;
@@ -73,17 +78,17 @@ a {
 	border: none;
 }
 
-.call-form a:hover,
-.call-form a:focus {
+.booking button:hover,
+.booking button:focus {
 	background-color: #604e43;
 }
 
-.call-form a:active {
+.booking button:active {
 	background-color: #503e33;
 	color: #857871;
 }
 
-.search-button {
+.modal-form button {
 	font-size: 21px;
 	line-height: 26px;
 	color: #ffffff;
@@ -91,12 +96,12 @@ a {
 	background-color: #81b3d2;
 }
 
-.search-button:hover,
-.search-button:focus {
+.modal-form button:hover,
+.modal-form button:focus {
 	background-color: #669ec0;
 }
 
-.search-button:active {
+.modal-form button:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
@@ -110,39 +115,40 @@ a {
 	background-repeat: no-repeat;
 }
 
-.item-house, .item-food, .item-suvenirs {
+.house,
+.food,
+.suvenirs {
 	background-repeat: no-repeat;
 	background-position: top center;
 
 }
 
-.item-house {
+.house {
 	background-image: url("../img/icon-1.svg");
 }
 
-.item-suvenirs {
+.suvenirs {
 	background-image: url("../img/icon-2.svg");
 }
 
-.item-food {
+.food {
 	background-image: url("../img/icon-3.svg");
 }
 
-.search-form label,
-.search-form input {
+.modal-form {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
 }
 
- .search-form input {
+ .modal-form input {
 	background-color: #f2f2f2;
 }
-.search-form input:focus {
+.modal-form input:focus {
 	background-color: #ffffff;
 }
 
-.search-form input:hover {
+.modal-form input:hover {
 	background-color: #ebebeb;
 }
 
@@ -165,8 +171,9 @@ a {
 
 .filter-form label,
 .cost-house a,
+.cost-house output,
 .product,
-.rating {
+.item-rating {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -184,8 +191,8 @@ a {
 	background-color: #ffffff;
 }
 
-.search .item,
-.search .item-current {
+.result-search .item,
+.result-search .item-current {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
@@ -208,29 +215,29 @@ a {
 	color: #81b3d2;
 }
 
-.hierarchy a {
+.arrows a {
 	color: #cacaca;
 } 
 
-.hierarchy a:hover,
-.hierarchy a:focus {
+.arrows a:hover,
+.arrows a:focus {
 	color: #000000;
 }
 
-.hierarchy a:active,
-.hhierarchy .current {
+.arrows a:active,
+.arrows .active {
 	color: #81b3d2;
 }
 
 
-.result-amount,
+.amount,
 .hotel-name {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
 
-.rating {
+.item-rating {
 
 	background-color: #f2f2f2;
 	color: #666666;
