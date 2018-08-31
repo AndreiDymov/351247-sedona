@@ -13,9 +13,11 @@
 			<nav class="main-navigation">
 				<a  href="info.html" aria-label="Информация о седоне">Информация</a>
 				<a  href="media.html" aria-label="Фото и видео седоны">Фото и видео</a>
-				<a class="label" href="index.html" aria-label="Главная страница">
-				   <img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
-				</a>
+				<div class="logo-box">
+					<a class="label" href="index.html" aria-label="Главная страница">
+				   		<img src="http://placehold.it/150x100" alt="Главная страница отеля Седона">
+					</a>
+				</div>	
 				<a  href="mapstate.html" aria-label="Карта штата">Карта штата</a>
 				<a  class="current-page" href="#" aria-label="Гостиницы седоны">Гостиницы</a>
 			</nav>
@@ -37,7 +39,7 @@
 						<label for="wi-fi-id">wi-fi</label>
 					</div>
 					<div class="type-house">
-					   <h3>Тип жилья:</h3>
+					    <h3>Тип жилья:</h3>
 						<input type="checkbox" name="hotel" id="hotel-id">
 						<label for="hotel-id">Гостиница</label>
 						<input type="checkbox" name="motel" id="motel-id">
@@ -59,23 +61,25 @@
 			</section>
 			<section class="result-search">
 				<h2 class="visually-hidden">Результат поиска</h2>
-				<span class="amount">найдено:3<span></span></span>
-				<span class="item">сортировка</span>
-				<ul class="sorting">
-					<li class="item item-current">
-					   <a>по цене</a>
-					</li>
-					<li class="item">
-					   <a>по типу</a>
-					</li>
-					<li class="item">
-					   <a>по рейтингу</a>
-					</li>
-					<li class="arrows">
-						<a class="arrow-up">&#8743;</a>
-						<a class="arrow-down active">&#8744;</a>
-					</li>
-				</ul>
+				<div class="result-search-box">
+					<span class="amount">найдено:3<span></span></span>
+					<span class="item">сортировка</span>
+					<ul class="sorting">
+						<li class="item item-current">
+					   		<a>по цене</a>
+						</li>
+						<li class="item">
+						   <a>по типу</a>
+						</li>
+						<li class="item">
+						   <a>по рейтингу</a>
+						</li>
+						<li class="arrows">
+							<a class="arrow-up">&#8743;</a>
+							<a class="arrow-down active">&#8744;</a>
+						</li>
+					</ul>
+				</div>	
 			</section>
 			<section class="catalog"> 
 				<h2 class="visually-hidden">Каталог поиска</h2>   
